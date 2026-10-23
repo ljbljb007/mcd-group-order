@@ -1,0 +1,25 @@
+# 环境变量与凭证（切勿提交真实 Token）
+.env
+.env.*
+*.token
+mcp-config.json
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 日志与临时文件
+*.log
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
