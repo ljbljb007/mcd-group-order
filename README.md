@@ -4,6 +4,11 @@
 
 [![MCP](https://img.shields.io/badge/MCP-mcd--mcp-FFC72C?style=flat-square)](https://github.com/M-China/mcd-mcp-server)
 [![Contest](https://img.shields.io/badge/麦当劳程序员创意开发大赛-参赛作品-FFC72C?style=flat-square)](https://github.com/M-China/mcd-developer-innovation-challenge)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](./LICENSE)
+
+**仓库地址**：https://github.com/ljbljb007/mcd-group-order
+
+> 如果这个项目对你有用，欢迎点个 ⭐ —— 本项目的参赛排名以 GitHub 公开 Star 数计。
 
 ---
 
@@ -241,3 +246,9 @@ mcd-group-order/
 - 活动主页：[mcd-developer-innovation-challenge](https://github.com/M-China/mcd-developer-innovation-challenge)
 - MCP Server：[mcd-mcp-server](https://github.com/M-China/mcd-mcp-server)
 - 开发工具：[WorkBuddy](https://www.workbuddy.cn/)
+
+---
+
+## 许可证
+
+[MIT](./LICENSE) © 2026 ljbljb007
