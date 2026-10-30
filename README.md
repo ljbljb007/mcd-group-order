@@ -335,7 +335,7 @@ A：不会报错，走三级降级：砍随单购 / 加购 → 饮料降档 → 
 
 - 仓库：https://github.com/ljbljb007/mcd-group-order
 - MCP Server：[mcd-mcp-server](https://github.com/M-China/mcd-mcp-server)
-- 开发工具：[Codex](https://chatgpt.com/))
+- 开发工具：[Codex](https://chatgpt.com/)
 
 ---
 
