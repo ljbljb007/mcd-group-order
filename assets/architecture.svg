@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 630" width="940" height="630" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFC72C"/>
+      <stop offset="100%" stop-color="#FF8C1A"/>
+    </linearGradient>
+    <linearGradient id="brandSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD34D"/>
+      <stop offset="100%" stop-color="#FFA23A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="940" height="630" rx="16" fill="#FFFDF9"/>
+
+  <!-- Header -->
+  <path d="M16 0 H924 a16 16 0 0 1 16 16 V62 H0 V16 A16 16 0 0 1 16 0 Z" fill="url(#brand)"/>
+  <text x="28" y="34" font-size="21" font-weight="700" fill="#3A2A00">mcd-group-order · 多人点餐协调流程</text>
+  <text x="28" y="57" font-size="12.5" fill="#6B4E00">从一句话立案到确认下单 · 全程调用麦当劳官方 MCP 真实接口 · 6 步 · 13 个工具</text>
+
+  <!-- ====== Left: 6 steps ====== -->
+  <!-- Step 01 -->
+  <rect x="24" y="96" width="560" height="70" rx="12" fill="#FFFFFF" stroke="#EDE6DA"/>
+  <circle cx="54" cy="131" r="15" fill="url(#brand)"/>
+  <text x="54" y="136" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">01</text>
+  <text x="82" y="120" font-size="14.5" font-weight="700" fill="#2E2A24">立案</text>
+  <text x="82" y="139" font-size="11.5" fill="#6B6459">提取人数 / 预算 / 取餐方式 / 硬约束，输出立案卡</text>
+  <rect x="82" y="148" width="58" height="19" rx="6" fill="#F3F1ED" stroke="#DDD8CE"/>
+  <text x="111" y="161" font-size="10" fill="#6B6459" text-anchor="middle">仅对话层</text>
+
+  <!-- Step 02 -->
+  <rect x="24" y="176" width="560" height="70" rx="12" fill="#FFFFFF" stroke="#EDE6DA"/>
+  <circle cx="54" cy="211" r="15" fill="url(#brand)"/>
+  <text x="54" y="216" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">02</text>
+  <text x="82" y="200" font-size="14.5" font-weight="700" fill="#2E2A24">定门店</text>
+  <text x="82" y="219" font-size="11.5" fill="#6B6459">到店查门店；外送先取配送地址，再查可配送门店</text>
+  <rect x="82" y="228" width="120" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="142" y="241" font-size="10" fill="#7A5200" text-anchor="middle">query-nearby-stores</text>
+  <rect x="210" y="228" width="148" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="284" y="241" font-size="10" fill="#7A5200" text-anchor="middle">delivery-query-addresses</text>
+  <rect x="366" y="228" width="132" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="432" y="241" font-size="10" fill="#7A5200" text-anchor="middle">delivery-query-stores</text>
+
+  <!-- Step 03 -->
+  <rect x="24" y="256" width="560" height="70" rx="12" fill="#FFFFFF" stroke="#EDE6DA"/>
+  <circle cx="54" cy="291" r="15" fill="url(#brand)"/>
+  <text x="54" y="296" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">03</text>
+  <text x="82" y="280" font-size="14.5" font-weight="700" fill="#2E2A24">首版提案</text>
+  <text x="82" y="299" font-size="11.5" fill="#6B6459">拿在售菜单与营养数据，按双池模型直接给方案（不问偏好）</text>
+  <rect x="82" y="308" width="76" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="120" y="321" font-size="10" fill="#7A5200" text-anchor="middle">query-meals</text>
+  <rect x="166" y="308" width="126" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="229" y="321" font-size="10" fill="#7A5200" text-anchor="middle">list-nutrition-foods</text>
+  <rect x="300" y="308" width="109" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="354" y="321" font-size="10" fill="#7A5200" text-anchor="middle">query-meal-detail</text>
+
+  <!-- Step 04 -->
+  <rect x="24" y="336" width="560" height="70" rx="12" fill="#FFFFFF" stroke="#EDE6DA"/>
+  <circle cx="54" cy="371" r="15" fill="url(#brand)"/>
+  <text x="54" y="376" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">04</text>
+  <text x="82" y="360" font-size="14.5" font-weight="700" fill="#2E2A24">异议收敛</text>
+  <text x="82" y="379" font-size="11.5" fill="#6B6459">L0 / L1 / L2 分级处理，最多 3 轮，给代价而不是拒绝</text>
+  <rect x="82" y="388" width="88" height="19" rx="6" fill="#EAF6FF" stroke="#C2E0F5"/>
+  <text x="126" y="401" font-size="10" fill="#1F5C8B" text-anchor="middle">冲突消解矩阵</text>
+
+  <!-- Step 05 -->
+  <rect x="24" y="416" width="560" height="70" rx="12" fill="#FFFFFF" stroke="#EDE6DA"/>
+  <circle cx="54" cy="451" r="15" fill="url(#brand)"/>
+  <text x="54" y="456" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">05</text>
+  <text x="82" y="440" font-size="14.5" font-weight="700" fill="#2E2A24">用券与算价</text>
+  <text x="82" y="459" font-size="11.5" fill="#6B6459">自动领券 → 查本单可用券 → 真实算价 → 超预算走三级降级</text>
+  <rect x="82" y="468" width="109" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="136" y="481" font-size="10" fill="#7A5200" text-anchor="middle">auto-bind-coupons</text>
+  <rect x="199" y="468" width="120" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="259" y="481" font-size="10" fill="#7A5200" text-anchor="middle">query-store-coupons</text>
+  <rect x="327" y="468" width="98" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="376" y="481" font-size="10" fill="#7A5200" text-anchor="middle">calculate-price</text>
+
+  <!-- Step 06 -->
+  <rect x="24" y="496" width="560" height="70" rx="12" fill="#FFF9EC" stroke="#F2CE7A"/>
+  <circle cx="54" cy="531" r="15" fill="url(#brandSoft)"/>
+  <text x="54" y="536" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">06</text>
+  <text x="82" y="520" font-size="14.5" font-weight="700" fill="#2E2A24">确认下单</text>
+  <text x="82" y="539" font-size="11.5" fill="#6B6459">输出点单确认卡 → 复述并获确认 → 落单 → 核实支付状态</text>
+  <rect x="82" y="548" width="81" height="19" rx="6" fill="#FFECEC" stroke="#F5C6C6"/>
+  <text x="122" y="561" font-size="10" fill="#9B2C2C" text-anchor="middle">create-order</text>
+  <rect x="171" y="548" width="76" height="19" rx="6" fill="#FFF6E0" stroke="#F0D79A"/>
+  <text x="209" y="561" font-size="10" fill="#7A5200" text-anchor="middle">query-order</text>
+  <text x="290" y="561" font-size="10" fill="#9B2C2C">← 真实扣款，执行前必须复述确认</text>
+
+  <!-- ====== Right: mechanisms ====== -->
+  <rect x="608" y="96" width="308" height="470" rx="12" fill="#FFFCF3" stroke="#EFE3C8"/>
+  <text x="624" y="124" font-size="13" font-weight="700" fill="#3A2A00">核心协调机制</text>
+  <line x1="624" y1="133" x2="892" y2="133" stroke="#EFE3C8" stroke-width="1"/>
+
+  <rect x="624" y="144" width="276" height="92" rx="10" fill="#FFFFFF" stroke="#F3E2BC"/>
+  <text x="640" y="168" font-size="12" font-weight="700" fill="#7A5200">提案先行 · 异议收敛</text>
+  <text x="640" y="188" font-size="10.5" fill="#6B6459">先给完整提案，只收异议</text>
+  <text x="640" y="206" font-size="10.5" fill="#6B6459">没反馈即默认通过</text>
+  <text x="640" y="224" font-size="10.5" fill="#9A8E7A">把多轮问询压成 1 次提案</text>
+
+  <rect x="624" y="246" width="276" height="92" rx="10" fill="#FFFFFF" stroke="#F3E2BC"/>
+  <text x="640" y="270" font-size="12" font-weight="700" fill="#7A5200">双池配额</text>
+  <text x="640" y="290" font-size="10.5" fill="#6B6459">个人池：主食+饮料按人头</text>
+  <text x="640" y="308" font-size="10.5" fill="#6B6459">共享池：小食按人数折算</text>
+  <text x="640" y="326" font-size="10.5" fill="#9A8E7A">兼作预算缓冲层</text>
+
+  <rect x="624" y="348" width="276" height="92" rx="10" fill="#FFFFFF" stroke="#F3E2BC"/>
+  <text x="640" y="372" font-size="12" font-weight="700" fill="#7A5200">忌口分级</text>
+  <text x="640" y="392" font-size="10.5" fill="#6B6459">L0 过敏/素食 → 零妥协</text>
+  <text x="640" y="410" font-size="10.5" fill="#6B6459">L1 不吃辣/控热量 → 必满足</text>
+  <text x="640" y="428" font-size="10.5" fill="#9A8E7A">L2 想加份 → 报价式回应</text>
+
+  <rect x="624" y="450" width="276" height="104" rx="10" fill="#FFFFFF" stroke="#F3E2BC"/>
+  <text x="640" y="474" font-size="12" font-weight="700" fill="#7A5200">三级降级</text>
+  <text x="640" y="494" font-size="10.5" fill="#6B6459">① 砍加购 / 共享小食</text>
+  <text x="640" y="512" font-size="10.5" fill="#6B6459">② 饮料降档</text>
+  <text x="640" y="530" font-size="10.5" fill="#6B6459">③ 主食降档</text>
+  <text x="640" y="548" font-size="10.5" fill="#9A8E7A">先砍共享，保住公平感</text>
+
+  <!-- Footer -->
+  <text x="470" y="596" font-size="11.5" fill="#6B6459" text-anchor="middle">铁律：价格只认 calculate-price（接口返回单位为「分」）· 一单到底不可拆单 · 忌口与过敏请自行核对餐品成分</text>
+  <text x="470" y="616" font-size="10.5" fill="#A79E90" text-anchor="middle">本图为流程示意，餐品、价格、供应状态以麦当劳官方渠道实时结果为准 · 非麦当劳官方产品</text>
+</svg>

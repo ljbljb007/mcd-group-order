@@ -29,6 +29,7 @@ Powered by 13 real MCP tools (`query-meals`, `calculate-price`, `create-order`, 
 
 ## 📌 目录
 
+- [一图看懂流程](#-一图看懂从一句话到一单)
 - [为什么需要它](#-为什么需要它多人点餐的成本在哪)
 - [30 秒上手](#-30-秒上手)
 - [使用示例](#-使用示例)
@@ -40,6 +41,17 @@ Powered by 13 real MCP tools (`query-meals`, `calculate-price`, `create-order`, 
 - [设计取舍](#-设计取舍)
 - [更新日志](#-更新日志)
 - [支持本项目](#-支持本项目)
+
+---
+
+## 🧭 一图看懂：从一句话到一单
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/architecture.png">
+  <img src="./assets/architecture.svg" alt="mcd-group-order 六步协调流程：立案 → 定门店 → 首版提案 → 异议收敛 → 用券与算价 → 确认下单" width="940">
+</picture>
+
+> 左侧是六步流程（每步标注用到的 MCP 工具），右侧是四个核心协调机制。铁律：价格只认 `calculate-price`，一单到底不可拆单，`create-order` 前必须复述确认。
 
 ---
 
@@ -246,6 +258,9 @@ mcd-group-order/
 ├── mcp-config.example.json       脱敏 MCP 配置示例（仅环境变量占位符）
 ├── workbuddy.md                  WorkBuddy 开发对话上下文
 ├── LICENSE                       MIT
+├── assets/
+│   ├── architecture.svg          六步协调流程图（README 用）
+│   └── architecture.png          流程图 2x PNG（兼容性备用）
 ├── references/                   按需加载的参考
 │   ├── menu-planning.md          双池配额算法、人均档位、热量控制清单
 │   ├── conflict-resolution.md    冲突矩阵、异议话术、收敛失败处理
