@@ -319,9 +319,8 @@ A：不会报错，走三级降级：砍随单购 / 加购 → 饮料降档 → 
 ## 🔗 相关链接
 
 - 仓库：https://github.com/ljbljb007/mcd-group-order
-- 活动主页：[mcd-developer-innovation-challenge](https://github.com/M-China/mcd-developer-innovation-challenge)
 - MCP Server：[mcd-mcp-server](https://github.com/M-China/mcd-mcp-server)
-- 开发工具：[WorkBuddy](https://www.workbuddy.cn/)
+- 开发工具：[Codex](https://chatgpt.com/))
 
 ---
 
